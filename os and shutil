@@ -1,0 +1,22 @@
+#OS
+import os 
+os.mkdir('path where we want the folder to be created/ folder name')
+os.getcwd()
+
+#specify path
+path='/usr/local/bin'
+
+#check whether the specified path exist or not
+isExist=os.path.exists(path)
+print (isExist)
+
+path='/home/user/desktop/file.txt'
+
+#split the path in root and extention pair
+root_ext=os.path.splitext(path)
+
+#print root and extention of the specified path
+print ('root part', root_ext[0])
+print ('ext part', root_ext[1],'\n')
+
+os.listdir()
