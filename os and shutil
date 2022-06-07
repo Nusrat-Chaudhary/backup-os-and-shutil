@@ -21,3 +21,28 @@ print ('ext part', root_ext[1],'\n')
 
 os.listdir()
 
+#SHUTIL
+import shutil
+shutil.copy()
+
+path='/home/documents'
+
+#list file and directories in '/home/documents'
+print ('before copying a file:')
+print (os.listdir(path))
+
+source='/home/download/file.txt'
+destination='/home/download/file(copy.txt)'
+
+#copy the content of source to destination
+dest=shutil.copy(source,destination)
+
+print('after copying file:')
+print (os.listdir(path))
+
+source='/home/video/mp4'
+destination='/home/video/png'
+
+dest=shutil.move(source, destination)
+
+
