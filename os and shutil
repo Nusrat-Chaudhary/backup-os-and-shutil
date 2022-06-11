@@ -2,6 +2,7 @@
 import os 
 os.mkdir('path where we want the folder to be created/ folder name')
 os.getcwd()
+os.system("date")
 
 #specify path
 path='/usr/local/bin'
